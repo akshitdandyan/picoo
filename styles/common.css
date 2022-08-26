@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+.mid-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-center {
+    text-align: center;
+}
+
+.w-max {
+    width: max-content;
+}
+.text-lg {
+    font-size: 1.5rem;
+    font-weight: bold;
+}

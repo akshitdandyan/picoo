@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Picoo | Search and save millions of pictures</title>
+        <link rel="stylesheet" href="./styles/common.css" />
+        <link rel="stylesheet" href="./styles/homepage.css" />
+        <script src="./scripts/db.js"></script>
+    </head>
+    <body>
+        <header class="mid-box">
+            <div class="mid-box w-max">
+                <img src="./assets/logo.svg" alt="Picoo Logo SVG" height="50" />
+                <div class="text-lg">Picoo</div>
+            </div>
+            <div>
+                <div class="text-sm">
+                    <a href="/mydownloads">Downloads</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="text-center">
+                Search for images and save them to your downloads.
+            </div>
+
+            <div id="search-field-wrapper" class="mid-box">
+                <input
+                    type="text"
+                    id="search-field"
+                    placeholder="Search for images"
+                />
+            </div>
+
+            <div id="search-results-wrapper">
+                <div class="card">
+                    <div class="card-header">
+                        <img
+                            src="https://cdn.pixabay.com/photo/2013/10/15/09/12/flower-195893_150.jpg"
+                            alt="IPIP"
+                        />
+                    </div>
+                    <div class="card-body">
+                        <div class="card-metrics mid-box">
+                            <div class="mid-box">
+                                <img src="./assets/likes-icon.svg" />
+                                <div class="metric-data">1800</div>
+                            </div>
+                            <div class="mid-box">
+                                <img src="./assets/comments-icon.svg" />
+                                <div class="metric-data">320</div>
+                            </div>
+                            <div class="mid-box">
+                                <img src="./assets/views-icon.svg" />
+                                <div class="metric-data">3402</div>
+                            </div>
+                            <div class="mid-box">
+                                <img src="./assets/downloads-icon.svg" />
+                                <div class="metric-data">500</div>
+                            </div>
+                        </div>
+                        <div class="card-user mid-box w-max">
+                            <img
+                                src="https://cdn.pixabay.com/user/2013/11/05/02-10-23-764_250x250.jpg"
+                                alt="User"
+                            />
+                            <div class="card-user-name">James Charles</div>
+                        </div>
+                        <div class="card-tags">#nature #flowers #awesome</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="./scripts/homepage.js"></script>
+    </body>
+</html>
