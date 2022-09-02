@@ -81,6 +81,7 @@ async function getSearchResults() {
             return card;
         });
         console.log(cards);
+        searchResultsWrapper.innerHTML = "";
         searchResultsWrapper.append(...cards);
         spinner.style.display = "none";
     } catch (error) {
@@ -94,3 +95,15 @@ searchField.addEventListener("keypress", async function (e) {
     }
     getSearchResults();
 });
+
+async function updateTotalDownloads() {
+    const totalDownloads = document.getElementById("totalDownloads");
+    const medias = await getAllMedia();
+    console.log("medias: ", medias);
+    if (medias.length > 0) {
+        totalDownloads.innerText = medias.length;
+        console.log("totalDownloads: ", medias.length);
+    }
+}
+
+updateTotalDownloads();

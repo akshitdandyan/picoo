@@ -23,7 +23,12 @@
 .downloaded-media {
     position: relative;
     width: 80vw;
-    margin: auto;
+    max-height: 500px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 18px auto;
 }
 
 .downloaded-media-icons-wrapper {

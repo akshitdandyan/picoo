@@ -81,6 +81,8 @@ async function saveMedia(media) {
                                 alt="Downloaded Photo"
                                 height="20px"
                             />`;
+
+            updateTotalDownloads();
         };
         request.onerror = function (event) {
             console.log("error: ", event);
