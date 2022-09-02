@@ -1,0 +1,57 @@
+.downloadsHeading {
+    margin-top: 14px;
+    margin-left: 14px;
+}
+#no-downloads-wrapper {
+    flex-direction: column !important;
+    margin-top: 8vw;
+}
+#no-downloads-wrapper img {
+    width: 100px;
+}
+#no-downloads-wrapper .info-text {
+    margin-top: 16px;
+    color: gray;
+    font-size: large;
+    font-weight: bold;
+}
+
+#downloaded-media-wrapper {
+    padding: 24px;
+}
+
+.downloaded-media {
+    position: relative;
+    width: 80vw;
+    margin: auto;
+}
+
+.downloaded-media-icons-wrapper {
+    justify-content: left !important;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+.downloaded-media-icons-wrapper > div {
+    background: rgba(255, 255, 255, 0.4);
+    margin: 8px;
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.downloaded-media-icons-wrapper > div:active {
+    transform: scale(0.9);
+}
+
+.downloaded-media-img {
+    width: 80vw;
+    height: auto;
+}
+
+.downloaded-media-img > img {
+    width: 100%;
+    height: auto;
+}
